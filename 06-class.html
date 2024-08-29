@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <meta charset="UTF-8">
+    <head> 
+        <title>06-class</title>
+        <style> 
+            body{background-color: tan;}
+            div{ float:left;  width: 30%; 
+                border-width:2px; border: solid black; 
+                padding: 5px 5px 5px 5px;  margin 10px,10px,10px,10px;}
+            
+          
+        </style>
+    </head>
+    <body style="backgorund-color:tan;" onload="onLoad()"> 
+        <h1>DIV's and JavaScript</h1>
+        <div id="div1" class="div-1"  >
+            <p> This is the first division. </p>
+        </div>
+        <div id="div2" class="div-2" >            
+        </div>
+        <div id="div3" class="div-3"  >
+            <img src="https://aptokash.github.io/Home/ZMarist_Logo.png"
+                 id="image1" width=100px heigth=100px>        
+        </div>
+        <div id="div4" class="div-4" >    
+            <p> This is the fourth division. </p>
+        </div>
+        <div id="div5" class="div-5" >        
+            <p> This is the fifth division. </p>
+        </div>
+        <div id="div6" class="div-6">        
+        </div>
+        
+        <div id="buttons">
+           <input type=button onclick="button1()"  id="button1" value="Set">
+           <input type=button onclick="button2()" id="button2" value="Button 2" >
+           <input type=button onclick="button" id="button3" value="Button 3">
+        </div> 
+        <footer> 
+            <hr>
+            <small>&copy; J. Russo, February 27,2023</small>
+        </footer>
+        <script>
+            globalAuthor="Julianna Russo";
+        function changeColor(){ 
+            document.getElementById('button1').style.backgroundColor="green";
+        } 
+        function onLoad(){ 
+
+            var division6= document.getElementById("div6").innerHTML="Autoloaded text for 6th division";
+             document.getElementById("div2").innerHTML="<p style='color:blue;'>"+ "<strong> Autoloaded text for second division </strong>";
+            div5=document.getElementById("div5");
+            div5.innerHTML=" Coded by "+ globalAuthor;
+
+
+                
+        }
+        function button1(){ 
+            but1=document.getElementById("button1")
+            if(but1.value =="Set"){ 
+                but1.value ="Unset"; 
+                changeColor(but1);
+            }else{ 
+
+                but1.value="Set";
+                changeColor(but1);
+                
+            }
+        }
+        
+        function button2(){ 
+            var pic=document.getElementById('image1');
+            pic.src="https://aptokash.github.io/Home/Ziee.jpg";
+
+        }
+        </script>
+
+    </body>
+    
+</html>

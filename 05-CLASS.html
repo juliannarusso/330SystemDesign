@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Class 5 </title>
+  <!--.div-1{background-color:purple}
+    .div-2{background-color:rgb(168, 16, 64)}
+    .div-3{background-color:rgb(10, 90, 6)}
+    .div-4{background-color:rgb(21, 15, 146)}
+    .div-5{background-color:rgb(8, 89, 126)}
+    .div-6{background-color:rgb(105, 38, 42)}-->
+  
+  <style>
+    .body{background-color: brown; color:white}
+    .veryImportant{font-size:40px; text-decoration:underline}
+    .floatRight{float:right; width:50%; border:4px solid black; padding: 5px 5px 5px 5px; margin: 5px 5px 5px 5px}
+    #div3 {font-style: italic}
+
+    
+    
+    p{font-size:large}
+  </style>  
+  <meta charset="UTF-8">
+</head>
+<body style= "background-color:brown; color:white"> 
+    <h1 style="color:white">A05-Russo</h1>
+    <div id="group1" class="floatRight"> 
+
+    <div id="div1"  class="div-1"> 
+        <h2 class="veryImportant">Attention</h2>
+        <ul>
+            <li>Consider Context</li>
+            <li>Use techniques to achieve this when designing visual interfaces</li>
+            <li>Avoid cluttering the visual interface with too much information</li>
+            <li>Consider using different ways of supporting effective switching and returning on a paticular interface</li>
+        </ul>
+      </div>
+      <div id="div2"class="div-2"> 
+        <h2 class="veryImportant">Perception</h2>
+        <ul>
+            <li>Design icons and other graphical representations so that users can readily distinguish between them</li>
+            <li>Haptic feedback should be used</li>
+            <li>Distinctive audio sounds that are easily distinguishable from eachother should be used</li>
+            <li>Research proper color contrast techniques when designing an interface</li>
+            <li>Obvious seperators and white space are effective visual methods for grouping information that makes it eaiser to percieve and locate items</li>
+        </ul>
+      </div>
+      <br style="clear:right;">
+    </div>
+    <div id="group2" > 
+      <div id="div3" class="div-3"> 
+        <h2 class="veryImportant">Memory</h2>
+        <ul >
+            <li>Reduce congnitive load by avoiding long and overly complicated procedres for carrying out tasks</li>
+            <li>Design interfaces that promote recognition rather than recall by using familiar interaction patterns, menus, icons, and consistently placed objects</li>
+            <li>Provide users with a variety of ways of labling digital information to help them easily identify it again through the use of folders</li>
+        </ul>
+      </div>
+      <div id="div4" class="div-4"> 
+        <h2 class="veryImportant">Learning</h2>
+        <ul> 
+            <li>Design interfaces that encourage exploration</li>
+            <li>Design interfaces that constrain and guide user to select appropriate actions when intially learning</li>
+        </ul>
+      </div>
+      <div id="div5" class="div-5"> 
+        <h2 class="veryImportant">Reading, Speaking, and Listening</h2>
+        <ul> 
+            <li>Keep the length of speech-based menus and instructions to a minimum. Research has 
+                shown that people find it hard to follow spoken menus with more than three or four 
+                options. Likewise, they are bad at remembering sets of instructions and directions that 
+                have more than a few parts.</li>
+            <li> Accentuate the intonation of artificially generated speech voices, as they are harder to 
+                understand than human voices.</li>
+            <li> Provide opportunities for making text large on a screen, without affecting the formatting, 
+                for people who find it hard to read small text</li>
+        </ul>
+      </div>
+      <div id="div6"  class="div-6"> 
+        <h2 class="veryImportant">Problem-solving, Planning, Reasoning, and Decision-Making</h2>
+        <ul>
+            <li>This includes thinking about what to do, what the available options are, and what 
+                the consequences might be of carrying out a given action</li>
+            <li>They often involve conscious processes, discussion with others, and 
+                the use of various kinds of artifacts</li>
+            <li>Reasoning 
+                involves working through different scenarios and deciding which is the best option or solution to a diferent problem</li>
+        </ul>
+      </div>
+      <br style="clear:right;">
+    </div>
+      <p id="someText"></p>
+        <p><button onclick="questionOne()" style="background-color: rgb(249, 249, 250); color:rgb(4, 2, 2);"> Change Colors!</button>
+      <footer style="color:white">
+        <hr>
+        <small> &copy; J. Russo, February 16,2023  </small>
+        </footer> 
+        <script> 
+            function questionOne(){ 
+              var division= document.getElementById("div1");
+              division.style.backgroundColor="black";
+              var division2= document.getElementById("div2");
+              division2.style.backgroundColor="black";
+              var division3= document.getElementById("div3");
+              division3.style.backgroundColor="black";
+              var division4= document.getElementById("div4");
+              division4.style.backgroundColor="black";
+              var division5= document.getElementById("div5");
+              division5.style.backgroundColor="black";
+              var division6= document.getElementById("div6");
+              division6.style.backgroundColor="black";
+              
+        
+            
+            }
+          </script>
+      
+    </body>
+</html>
